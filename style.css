@@ -351,3 +351,19 @@ form.card textarea{
         text-align:center
     }
 }
+.navbar-toggler {
+    border-color: #b45b7c;
+}
+
+.navbar-toggler-icon {
+    filter: invert(42%) sepia(25%) saturate(700%) hue-rotate(290deg);
+}
+
+.navbar-nav .nav-link {
+    color: #66545d;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b45b7c;
+}
