@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block title %}Curso New Life | Home{% endblock %}
+
+{% block content %}
+
+<section class="hero-section">
+    <div class="container hero">
+        <div class="row align-items-center g-5 w-100">
+
+            <div class="hero-copy col-lg-7">
+                <div class="eyebrow">Curso Online</div>
+
+                <h1>
+                    Aprenda a fazer
+                    <span>unhas impecáveis</span>
+                    e transforme sua técnica.
+                </h1>
+
+                <p>
+                    Domine preparação, cuticulagem e unhas em gel com um método
+                    prático, profissional e direto ao ponto.
+                </p>
+
+                <a href="{{ url_for('contato') }}" class="cta btn btn-lg">
+                    Quero aprender
+                </a>
+
+                <div class="hero-note">
+                    <div>
+                        <strong>100%</strong>
+                        <span>online</span>
+                    </div>
+
+                    <div>
+                        <strong>Prático</strong>
+                        <span>e direto</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visual col-lg-5" aria-label="Foto de mãos com unhas em gel">
+                <img
+                    src="{{ url_for('static', filename='maos-unhas-gel.png') }}"
+                    class="img-fluid rounded-4 shadow"
+                    alt="Mãos com unhas em gel em acabamento delicado">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="content" id="conteudos">
+    <div class="container">
+
+        <header class="section-head">
+            <div class="tag">O que você vai aprender?</div>
+
+            <h2>
+                Do básico ao acabamento profissional.
+            </h2>
+
+            <p>
+                Um conteúdo pensado para quem quer começar do zero e desenvolver
+                uma técnica segura e profissional.
+            </p>
+        </header>
+
+        <div class="row g-4 cards">
+
+            <article class="card col-md-6 col-lg-4">
+                <div class="icon">✦</div>
+                <h3>Preparação das unhas</h3>
+                <p>
+                    Higienização, preparação da lâmina ungueal e cuidados antes
+                    do procedimento.
+                </p>
+            </article>
+
+            <article class="card col-md-6 col-lg-4">
+                <div class="icon">✦</div>
+                <h3>Cuticulagem</h3>
+                <p>
+                    Técnicas para realizar a cuticulagem com mais precisão,
+                    cuidado e acabamento bonito.
+                </p>
+            </article>
+
+            <article class="card col-md-6 col-lg-4">
+                <div class="icon">✦</div>
+                <h3>Unhas em gel</h3>
+                <p>
+                    Aprenda aplicação do gel, construção e cuidados para obter
+                    um resultado uniforme.
+                </p>
+            </article>
+
+            <article class="card col-md-6 col-lg-4">
+                <div class="icon">✦</div>
+                <h3>Estrutura</h3>
+                <p>
+                    Entenda formato, nivelamento e estrutura para uma aplicação
+                    equilibrada.
+                </p>
+            </article>
+
+            <article class="card col-md-6 col-lg-4">
+                <div class="icon">✦</div>
+                <h3>Acabamento</h3>
+                <p>
+                    Detalhes para entregar unhas mais delicadas, limpas e
+                    profissionais.
+                </p>
+            </article>
+
+            <article class="card col-md-6 col-lg-4">
+                <div class="icon">✦</div>
+                <h3>Atendimento</h3>
+                <p>
+                    Noções para organizar seu atendimento e transmitir
+                    profissionalismo.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="highlight">
+    <div class="container highlight-grid">
+
+        <div class="row align-items-center g-5 w-100">
+
+            <div class="highlight-copy col-lg-6">
+                <div class="tag">Por que fazer o curso?</div>
+
+                <h2>
+                    Mais do que aprender, você vai ganhar segurança.
+                </h2>
+
+                <p>
+                    Um passo a passo pensado para facilitar sua evolução e ajudar
+                    você a transformar conhecimento em prática.
+                </p>
+            </div>
+
+            <div class="highlight-list col-lg-6">
+                <div class="check">
+                    <b>✓</b> Conteúdo para iniciantes
+                </div>
+
+                <div class="check">
+                    <b>✓</b> Técnicas de preparação e cuticulagem
+                </div>
+
+                <div class="check">
+                    <b>✓</b> Fundamentos de unhas em gel
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Pronta para começar?</h2>
+
+        <p>
+            Dê o primeiro passo para aprender manicure profissional e
+            desenvolver uma técnica que pode abrir novas oportunidades.
+        </p>
+
+        <a href="{{ url_for('contato') }}" class="cta btn btn-lg">
+            Quero fazer o curso
+        </a>
+    </div>
+</section>
+
+{% endblock %}
