@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}Curso New Life | Sobre{% endblock %}
+
+{% block content %}
+
+<section class="hero-section">
+    <div class="container hero">
+        <div class="row align-items-center g-5 w-100">
+
+            <div class="hero-copy col-lg-7">
+                <div class="eyebrow">Sobre o curso</div>
+
+                <h1>
+                    Aprenda com um método
+                    <span>simples e profissional.</span>
+                </h1>
+
+                <p>
+                    O Curso New Life foi pensado para quem deseja aprender
+                    manicure de forma prática, organizada e acessível.
+                </p>
+
+                <a href="{{ url_for('contato') }}" class="cta btn btn-lg">
+                    Quero conhecer
+                </a>
+
+                <div class="hero-note">
+                    <div>
+                        <strong>100%</strong>
+                        <span>online</span>
+                    </div>
+
+                    <div>
+                        <strong>Prático</strong>
+                        <span>e profissional</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visual col-lg-5" aria-label="Foto de mãos com unhas em gel">
+                <img
+                    src="{{ url_for('static', filename='maos-unhas-gel.png') }}"
+                    class="img-fluid rounded-4 shadow"
+                    alt="Mãos com unhas em gel em acabamento delicado">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container">
+
+        <header class="section-head">
+            <div class="tag">Nossa proposta</div>
+
+            <h2>
+                Conhecimento que você consegue colocar em prática.
+            </h2>
+
+            <p>
+                A proposta é apresentar os fundamentos necessários para começar
+                a trabalhar com mais organização, confiança e técnica.
+            </p>
+        </header>
+
+        <div class="row g-4 cards">
+
+            <article class="card col-md-6 col-lg-4">
+                <div class="icon">01</div>
+                <h3>Comece do zero</h3>
+                <p>
+                    Conteúdo organizado para quem ainda está construindo sua
+                    base na área de manicure.
+                </p>
+            </article>
+
+            <article class="card col-md-6 col-lg-4">
+                <div class="icon">02</div>
+                <h3>Aprenda na prática</h3>
+                <p>
+                    Técnicas apresentadas de maneira direta para facilitar a
+                    compreensão e a aplicação.
+                </p>
+            </article>
+
+            <article class="card col-md-6 col-lg-4">
+                <div class="icon">03</div>
+                <h3>Desenvolva sua técnica</h3>
+                <p>
+                    Conheça os principais cuidados e etapas para melhorar o
+                    resultado dos procedimentos.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="highlight">
+    <div class="container highlight-grid">
+
+        <div class="row align-items-center g-5 w-100">
+
+            <div class="highlight-copy col-lg-6">
+                <div class="tag">Por que fazer o curso?</div>
+
+                <h2>
+                    Mais do que aprender, você vai ganhar segurança.
+                </h2>
+
+                <p>
+                    Um passo a passo pensado para facilitar sua evolução e
+                    ajudar você a transformar conhecimento em prática.
+                </p>
+            </div>
+
+            <div class="highlight-list col-lg-6">
+                <div class="check">
+                    <b>✓</b> Método passo a passo
+                </div>
+
+                <div class="check">
+                    <b>✓</b> Conteúdo para iniciantes
+                </div>
+
+                <div class="check">
+                    <b>✓</b> Técnicas de preparação e cuticulagem
+                </div>
+
+                <div class="check">
+                    <b>✓</b> Fundamentos de unhas em gel
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+
+        <h2>Pronta para começar?</h2>
+
+        <p>
+            Dê o primeiro passo para aprender manicure profissional e
+            desenvolver uma técnica que pode abrir novas oportunidades.
+        </p>
+
+        <a href="{{ url_for('contato') }}" class="cta btn btn-lg">
+            Quero fazer o curso
+        </a>
+
+    </div>
+</section>
+
+{% endblock %}
